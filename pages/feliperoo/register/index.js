@@ -15,7 +15,7 @@ export default function RegisterUser() {
   return (
     <Container pt={6}>
       <Heading>Register</Heading>
-      <Text color={"gray"}>We won't deliver any shit but fill this if you want</Text>
+      <Text color={"gray"}>We wont deliver any shit but fill this if you want</Text>
       <SimpleGrid columns={2} columnGap={3} rowGap={4} mt={4}>
         <GridItem colSpan={1}>
           <FormControl>

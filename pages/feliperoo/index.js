@@ -39,15 +39,15 @@ export default function Index() {
                 to your home</Heading>
               <VStack w={"full"} borderColor={"#0aa195"} borderWidth={1} p={6} alignItems={"flex-start"} bg={"white"}
                       spacing={4}>
-                <Text>Enter your fucking address:</Text>
+                <Text>Enter your fucking address</Text>
                 <Flex w={"full"} gap={{base: 2, sm: 4}} direction={{base: "column", sm: "row"}}>
                   <InputGroup>
                     <Input placeholder="Your fucking address"/>
-                    <InputRightElement children={<MdNearMe color={"#0aa195"}/>}/>
+                    <InputRightElement><MdNearMe color={"#0aa195"}/></InputRightElement>
                   </InputGroup>
                   <Button bgColor={"#00ccbc"} color={"white"}>Search</Button>
                 </Flex>
-                <Text color={"gray"} fontSize={"sm"}>* Putas don't pay anything. We are #PutasFriendly.</Text>
+                <Text color={"gray"} fontSize={"sm"}>* Putas dont pay anything. We are #PutasFriendly.</Text>
               </VStack>
             </VStack>
             <Box w={"full"} alignContent={"center"}>
