@@ -1,5 +1,11 @@
+import {Box, Text} from "@chakra-ui/react";
+import Navbar from "../../../components/Navbar";
+
 export default function ProductDetail() {
   return (
-    <h1>Detail</h1>
+    <Box>
+      <Text>Algo me vende</Text>
+    </Box>
+
   )
 }

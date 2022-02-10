@@ -1,5 +1,7 @@
-import {AspectRatio, HStack, Box, Grid, Image, Link, Text} from "@chakra-ui/react";
+import {AspectRatio, Box, Grid, Image, Link, Text} from "@chakra-ui/react";
 import Navbar from "../../components/Navbar";
+import Cart from "../../components/Cart";
+import {useState} from "react";
 
 const products = [{
   id: "id1",
@@ -31,23 +33,30 @@ const products = [{
   }]
 
 export default function Index() {
+  const [isCartOpen, setCartOpen] = useState(false);
+
   return (
     <Box>
-      <Navbar/>
-      <Grid templateColumns="repeat(4, 1fr)" gap={6}>
+      <Navbar onCartOpen={() => setCartOpen(true)} />
+      <Grid templateColumns="repeat(4, 1fr)" gap={6} m={6}>
         {
           products.map(p =>
-            <Box key={p.id} _hover={{opacity: '80%'}} textAlign="center">
+            <Box key={p.id}
+                 boxShadow={"md"}
+                 _hover={{opacity: '80%'}}
+                 textAlign="center"
+                 pb={2}>
               <Link href={`/shop/${p.id}`}>
-                <AspectRatio ratio={1}>
+                <AspectRatio ratio={1} borderBottomWidth={1}>
                   <Image src={p.image}/>
                 </AspectRatio>
-                <Text>{p.price}</Text>
-                <Text>{p.name}</Text>
+                <Text fontWeight={"bold"} mt={2}>{p.name}</Text>
+                <Text fontSize={"sm"} color={"gray"}>{p.price}</Text>
               </Link>
             </Box>)
         }
       </Grid>
+      <Cart isOpen={isCartOpen} onClose={() => setCartOpen(false)}/>
     </Box>
 
   )
