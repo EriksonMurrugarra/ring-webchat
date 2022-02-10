@@ -16,8 +16,26 @@ import {
 } from "@chakra-ui/react";
 import {MdExpandMore, MdFastfood, MdFavorite, MdMenu, MdNearMe} from "react-icons/md"
 import style from "../deliveroo.module.css";
+import {useState} from "react";
 
 export default function Index() {
+
+  const [address, setAddress] = useState("")
+  const [isAddressInvalid, setAddressValid] = useState(false)
+  const [isLoading, setIsLoading] = useState(false)
+
+  const searchAddress = () => {
+    setIsLoading(false)
+    if(address == undefined || address.length < 3) {
+      setAddressValid(true)
+      return
+    }
+    setIsLoading(true)
+    setTimeout(() => {
+      window.location="/feliperoo/shop"
+    }, 1500)
+  }
+
   return (
     <Box>
       <Box className={style.MainBanner}>
@@ -42,10 +60,14 @@ export default function Index() {
                 <Text>Enter your fucking address</Text>
                 <Flex w={"full"} gap={{base: 2, sm: 4}} direction={{base: "column", sm: "row"}}>
                   <InputGroup>
-                    <Input placeholder="Your fucking address"/>
+                    <Input
+                      onChange={e => setAddress(e.target.value)}
+                      value={address}
+                      isInvalid={isAddressInvalid}
+                      placeholder="Your fucking address"/>
                     <InputRightElement><MdNearMe color={"#0aa195"}/></InputRightElement>
                   </InputGroup>
-                  <Button bgColor={"#00ccbc"} color={"white"}>Search</Button>
+                  <Button isLoading={isLoading} onClick={searchAddress} bgColor={"#00ccbc"} color={"white"}>Search</Button>
                 </Flex>
                 <Text color={"gray"} fontSize={"sm"}>* Putas dont pay anything. We are #PutasFriendly.</Text>
               </VStack>
