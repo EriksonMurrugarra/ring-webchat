@@ -1,0 +1,4 @@
+.MainBanner {
+    background: rgb(208,235,153);
+    background: linear-gradient(350deg, rgba(208,235,153,1) 47%, rgba(10,161,149,1) 86%);
+}
