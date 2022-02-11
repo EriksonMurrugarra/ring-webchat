@@ -9,7 +9,7 @@ import {
   Icon,
   Image,
   Flex,
-  Input, InputGroup, InputRightElement, Link,
+  Input, InputGroup, InputRightElement, Link as CLink,
   Spacer,
   Text,
   VStack
@@ -17,12 +17,15 @@ import {
 import {MdExpandMore, MdFastfood, MdFavorite, MdMenu, MdNearMe} from "react-icons/md"
 import style from "../deliveroo.module.css";
 import {useState} from "react";
+import Link from "next/link"
+import {useRouter} from "next/router";
 
 export default function Index() {
 
   const [address, setAddress] = useState("")
   const [isAddressInvalid, setAddressValid] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
+  const router = useRouter()
 
   const searchAddress = () => {
     setIsLoading(false)
@@ -32,7 +35,8 @@ export default function Index() {
     }
     setIsLoading(true)
     setTimeout(() => {
-      window.location="/feliperoo/shop"
+      router.push("/feliperoo/shop")
+      // router.push({pathname:"/feliperoo/shop", query: {}})
     }, 1500)
   }
 
@@ -44,9 +48,9 @@ export default function Index() {
             <Heading size={"md"} color={"white"}><Icon as={MdFastfood}/> Feliperoo</Heading>
             <Spacer/>
             <Flex gap={4} direction={{base: 'column', 'sm': 'row'}}>
-              <Link href="/feliperoo/register">
+              <CLink href="/feliperoo/register">
                 <Button leftIcon={<MdExpandMore color={"#0aa195"}/>}>Partner with him?</Button>
-              </Link>
+              </CLink>
               <Button onClick={() => alert("No Pares Felipe!!")} leftIcon={<MdMenu color={"#0aa195"}/>}>Para
                 Felipe!</Button>
             </Flex>
@@ -80,7 +84,7 @@ export default function Index() {
       </Box>
       <Center mt={6} pb={6}>
         <Text color={"gray"} fontSize={"sm"}>
-          by <b>Sony</b></Text>
+          by </Text> <Link href={{pathname: "https://eriksonmurrugarra.com"}}>Sony</Link>
       </Center>
     </Box>
   )

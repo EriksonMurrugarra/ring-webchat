@@ -10,7 +10,7 @@ import {
   Drawer
 } from "@chakra-ui/react";
 
-export default function Cart({isOpen, onClose}) {
+export default function ShopCart({isOpen, onClose}) {
   return (
     <Drawer
       isOpen={isOpen}

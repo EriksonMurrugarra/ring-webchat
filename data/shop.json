@@ -1,0 +1,58 @@
+[
+  {
+    "id": "id1",
+    "name": "Kit Shinobi #1",
+    "price": "€29.99",
+    "description": "This kid is required if you want to be part of Shinobi Alliance.",
+    "image": "../tool1.jpg"
+  },
+  {
+    "id": "id2",
+    "name": "Konoha Gloves",
+    "price": "€9.99",
+    "description": "Protect your hands with this amazing gloves for Konoha ninjas. Only via internet.",
+    "image": "../tool2.jpg"
+  },
+  {
+    "id": "id3",
+    "name": "Vincha Hoja",
+    "price": "€19.49",
+    "description": "Only for graduate students with Genin level.",
+    "image": "../tool3.jpg"
+  },
+  {
+    "id": "id4",
+    "name": "Kunai Vintage",
+    "price": "€109.49",
+    "description": "Vintage kunai from Hokages and top level ninjas.",
+    "image": "../tool4.jpg"
+  },
+  {
+    "id": "id5",
+    "name": "Pack Kunai 2022",
+    "price": "€209.99",
+    "description": "Pack 3 Hokaged.",
+    "image": "../tool5.jpg"
+  },
+  {
+    "id": "id6",
+    "name": "Akatzuki Starter",
+    "price": "€209.99",
+    "description": "Pack 3 Hokaged.",
+    "image": "../tool6.jpg"
+  },
+  {
+    "id": "id7",
+    "name": "Pack Anbu",
+    "price": "€209.99",
+    "description": "Anbu Toolkit.",
+    "image": "../tool7.jpg"
+  },
+  {
+    "id": "id8",
+    "name": "Jounin Best Kunai",
+    "price": "49.99",
+    "description": "Pack 3 Hokaged.",
+    "image": "../tool8.jpg"
+  }
+]

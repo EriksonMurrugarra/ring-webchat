@@ -12,7 +12,7 @@ import {
   HStack, Spacer, Input, ButtonGroup, Button
 } from "@chakra-ui/react";
 
-export default function Test() {
+export default function Flink() {
 
   const Categories = () => {
     return (
