@@ -8,7 +8,7 @@ export default function ShopArticleItem(props) {
   const price = props.price
 
   return (
-    <Link href={detailUrl}>
+    <Link href={detailUrl} passHref>
       <Box
         boxShadow={"md"}
         cursor={"pointer"}
@@ -17,7 +17,7 @@ export default function ShopArticleItem(props) {
         textAlign="center"
         pb={2}>
         <AspectRatio ratio={1} borderBottomWidth={1}>
-          <Image src={image}/>
+          <Image alt={"algo"} src={image}/>
         </AspectRatio>
         <Text fontWeight={"bold"} mt={2}>{name}</Text>
         <Text fontSize={"sm"} color={"gray"}>{price}</Text>

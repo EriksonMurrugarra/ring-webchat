@@ -20,7 +20,7 @@ export default function Flink() {
         <WrapItem>
           <Box textAlign={"center"} borderWidth={1} borderRadius={10} p={4}
                shadow={"md"}>
-            <Image
+            <Image alt="algo"
               width={180}
               src="https://static.ah.nl/ah-static/images/packshots/AHWEBSHOP/6401.png"/>
             <Text mt={2}>Verduras y Frutas</Text>
@@ -29,7 +29,7 @@ export default function Flink() {
         <WrapItem>
           <Box textAlign={"center"} borderWidth={1} borderRadius={10} p={4}
                shadow={"md"}>
-            <Image
+            <Image alt="algo"
               width={180}
               src="https://static.ah.nl/ah-static/images/packshots/AHWEBSHOP/6401.png"/>
             <Text mt={2}>Verduras y Frutas</Text>
@@ -38,7 +38,7 @@ export default function Flink() {
         <WrapItem>
           <Box textAlign={"center"} borderWidth={1} borderRadius={10} p={4}
                shadow={"md"}>
-            <Image
+            <Image alt="algo"
               width={180}
               src="https://static.ah.nl/ah-static/images/packshots/AHWEBSHOP/6401.png"/>
             <Text mt={2}>Verduras y Frutas</Text>
@@ -47,7 +47,7 @@ export default function Flink() {
         <WrapItem>
           <Box textAlign={"center"} borderWidth={1} borderRadius={10} p={4}
                shadow={"md"}>
-            <Image
+            <Image alt="algo"
               width={180}
               src="https://static.ah.nl/ah-static/images/packshots/AHWEBSHOP/6401.png"/>
             <Text mt={2}>Verduras y Frutas</Text>
@@ -56,7 +56,7 @@ export default function Flink() {
         <WrapItem>
           <Box textAlign={"center"} borderWidth={1} borderRadius={10} p={4}
                shadow={"md"}>
-            <Image
+            <Image alt="algo"
               width={180}
               src="https://static.ah.nl/ah-static/images/packshots/AHWEBSHOP/6401.png"/>
             <Text mt={2}>Verduras y Frutas</Text>
@@ -65,7 +65,7 @@ export default function Flink() {
         <WrapItem>
           <Box textAlign={"center"} borderWidth={1} borderRadius={10} p={4}
                shadow={"md"}>
-            <Image
+            <Image alt="algo"
               width={180}
               src="https://static.ah.nl/ah-static/images/packshots/AHWEBSHOP/1301.png"/>
             <Text mt={2}>Verduras y Frutas</Text>
@@ -74,7 +74,7 @@ export default function Flink() {
         <WrapItem>
           <Box textAlign={"center"} borderWidth={1} borderRadius={10} p={4}
                shadow={"md"}>
-            <Image
+            <Image alt="algo"
               width={180}
               src="https://static.ah.nl/ah-static/images/packshots/AHWEBSHOP/6401.png"/>
             <Text mt={2}>Verduras y Frutas</Text>
@@ -137,17 +137,17 @@ export default function Flink() {
         <Heading size={"xl"}>Our Shops</Heading>
         <HStack spacing={6}>
           <VStack alignItems={"flex-start"} spacing={0}>
-            <Image mb={4} borderRadius={20} width="230px" src="https://static.ah.nl/binaries/ah/content/gallery/ah-nl/ah-nl-products/pageEntries/supershop---prijsfavorieten.png/supershop---prijsfavorieten.png/ahonline%3AmediumPageEntryImage" />
+            <Image alt="algo" mb={4} borderRadius={20} width="230px" src="https://static.ah.nl/binaries/ah/content/gallery/ah-nl/ah-nl-products/pageEntries/supershop---prijsfavorieten.png/supershop---prijsfavorieten.png/ahonline%3AmediumPageEntryImage" />
             <Text fontWeight={"bold"} fontSize={20}>Favorite prices</Text>
             <Text fontSize={"sm"} color={"gray"}>More than others prices</Text>
           </VStack>
           <VStack alignItems={"flex-start"} spacing={0}>
-            <Image mb={4} borderRadius={20} width="230px" src="https://static.ah.nl/binaries/ah/content/gallery/ah-nl/ah-nl-products/pageEntries/supershop---prijsfavorieten.png/supershop---prijsfavorieten.png/ahonline%3AmediumPageEntryImage" />
+            <Image alt="algo" mb={4} borderRadius={20} width="230px" src="https://static.ah.nl/binaries/ah/content/gallery/ah-nl/ah-nl-products/pageEntries/supershop---prijsfavorieten.png/supershop---prijsfavorieten.png/ahonline%3AmediumPageEntryImage" />
             <Text fontWeight={"bold"} fontSize={20}>Favorite prices</Text>
             <Text fontSize={"sm"} color={"gray"}>More than others prices</Text>
           </VStack>
           <VStack alignItems={"flex-start"} spacing={0}>
-            <Image mb={4} borderRadius={20} width="230px" src="https://static.ah.nl/binaries/ah/content/gallery/ah-nl/ah-nl-products/pageEntries/supershop---prijsfavorieten.png/supershop---prijsfavorieten.png/ahonline%3AmediumPageEntryImage" />
+            <Image alt="algo" mb={4} borderRadius={20} width="230px" src="https://static.ah.nl/binaries/ah/content/gallery/ah-nl/ah-nl-products/pageEntries/supershop---prijsfavorieten.png/supershop---prijsfavorieten.png/ahonline%3AmediumPageEntryImage" />
             <Text fontWeight={"bold"} fontSize={20}>Favorite prices</Text>
             <Text fontSize={"sm"} color={"gray"}>More than others prices</Text>
           </VStack>

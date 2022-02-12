@@ -18,7 +18,7 @@ export default function ProductDetail() {
       <Container maxW={"container.xl"} mt={10}>
         <SimpleGrid columns={[1, 2]} gap={6}>
           <Box>
-            <Image src={data.image}/>
+            <Image src={data.image} alt={"algo"}/>
           </Box>
           <VStack
             bg={"gray.50"} spacing={6} alignItems={"start"} p={6}>

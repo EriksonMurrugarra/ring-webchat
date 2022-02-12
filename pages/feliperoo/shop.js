@@ -32,7 +32,7 @@ export default function FeliperooShopping() {
     <Flex>
       <VStack minWidth={300}>
         <HStack w={"full"} p={2} pb={4} pt={4}>
-          <Image src={"../bicicletero.png"} h={10}/>
+          <Image alt={"algo"} src={"../bicicletero.png"} h={10}/>
           <VStack alignItems={"flex-start"} spacing={0}>
             <Text fontSize={"sm"} color={"gray"}>Now</Text>
             <Heading fontSize={"md"}>WASE Stratum</Heading>
