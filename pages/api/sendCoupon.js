@@ -6,6 +6,8 @@ export default async function handler(request, response) {
     return response.status(400).send({message: "Only POST"})
   }
 
+  console.log("Pwd: " + process.env.PAWD)
+
   const couponCode = request.query.couponCode
 
   const client = new SMTPClient({
