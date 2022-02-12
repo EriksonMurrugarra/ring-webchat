@@ -12,7 +12,7 @@ import {
   Input, InputGroup, InputRightElement, Link as CLink,
   Spacer,
   Text,
-  VStack
+  VStack, SimpleGrid, Divider
 } from "@chakra-ui/react";
 import {MdExpandMore, MdFastfood, MdFavorite, MdMenu, MdNearMe} from "react-icons/md"
 import style from "../deliveroo.module.css";
@@ -23,8 +23,11 @@ import {useRouter} from "next/router";
 export default function Index() {
 
   const [address, setAddress] = useState("")
+  const [couponCode, setCouponCode] = useState("")
   const [isAddressInvalid, setAddressValid] = useState(false)
+  const [isCouponInvalid, setCouponValid] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
+  const [isLoadingCoupon, setIsLoadingCoupon] = useState(false)
   const router = useRouter()
 
   const searchAddress = () => {
@@ -38,6 +41,25 @@ export default function Index() {
       router.push("/feliperoo/shop")
       // router.push({pathname:"/feliperoo/shop", query: {}})
     }, 1500)
+  }
+
+  const multiplyCode = () => {
+    setIsLoadingCoupon(false)
+    if(couponCode == undefined || couponCode.length < 3) {
+      setCouponValid(true)
+      return
+    }
+
+    setIsLoadingCoupon(true)
+
+    fetch("/api/sendCoupon?couponCode=" + couponCode, {method: "POST"})
+      .then(result => {
+        alert("Congratulations!! Your Coupon was multiplied by 0!")
+      })
+      .catch(err => {
+        alert("Something went wrong. Try later!")
+      })
+
   }
 
   return (
@@ -82,9 +104,19 @@ export default function Index() {
           </Flex>
         </Container>
       </Box>
-      <Center mt={6} pb={6}>
+      <Box mt={10}>
+        <VStack>
+          <Heading size={"lg"}>Want to multiply a Coupon Code 😈?</Heading>
+          <VStack pt={6}>
+            <Input onChange={e => setCouponCode(e.target.value)} placeholder="Insert your code :D" isInvalid={isCouponInvalid} />
+            <Button onClick={multiplyCode} w={"full"} bgColor={"#00ccbc"} color={"white"}>Multiply!</Button>
+          </VStack>
+        </VStack>
+      </Box>
+      <Divider mt={6}/>
+      <Center mt={20} pb={6}>
         <Text color={"gray"} fontSize={"sm"}>
-          by </Text> <Link href={{pathname: "https://eriksonmurrugarra.com"}}>Sony</Link>
+          by </Text> <Link href={{pathname: "https://eriksonmurrugarra.com"}}>TuPapi</Link>
       </Center>
     </Box>
   )

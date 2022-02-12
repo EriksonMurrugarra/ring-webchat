@@ -1,4 +1,4 @@
 GET localhost:3000/api/hello
 
 ###
-POST localhost:3000/api/sendCoupon?couponCode=ABCDD
+POST localhost:3000/api/sendCoupon?couponCode=123445
